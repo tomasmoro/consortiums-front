@@ -85,6 +85,20 @@ npm run type-check
 | Access Control | Full | Full | View+Create | View |
 | Communication | Full | Full | View+Create | View |
 
+## Screenshots
+
+### Login
+![Login Page](https://github.com/user-attachments/assets/acd7ffe6-5b48-4772-8f8e-9cf782c73987)
+
+### Dashboard (Admin)
+![Dashboard](https://github.com/user-attachments/assets/fae7997b-843b-4b85-bbf7-37fe316d2fb8)
+
+### Maintenance
+![Maintenance](https://github.com/user-attachments/assets/625fdb05-cbd1-4c01-8436-34e4d46e15b7)
+
+### Incidents
+![Incidents](https://github.com/user-attachments/assets/bef49bb7-8f0e-4107-8e53-d3365c7052e7)
+
 ## Architecture Decisions
 
 - **Feature-based structure**: Each domain feature is self-contained under `apps/web/features/`
