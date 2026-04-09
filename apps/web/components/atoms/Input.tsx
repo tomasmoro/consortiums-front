@@ -1,16 +1,13 @@
-import type { InputHTMLAttributes } from 'react';
-import { forwardRef } from 'react';
+import type { InputHTMLAttributes, Ref } from 'react';
 import { clsx } from 'clsx';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: string;
   label?: string;
+  ref?: Ref<HTMLInputElement>;
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { error, label, id, className, ...props },
-  ref,
-) {
+export function Input({ error, label, id, className, ref, ...props }: InputProps) {
   return (
     <div className="flex flex-col gap-1">
       {label && (
@@ -34,4 +31,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
       {error && <p className="text-xs text-red-500">{error}</p>}
     </div>
   );
-});
+}

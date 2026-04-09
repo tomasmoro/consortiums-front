@@ -12,9 +12,9 @@
   "dependencies": {
     "@condoflow/types": "*",
     "@condoflow/utils": "*",
-    "next": "14.2.35",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "next": "15.5.15",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "zustand": "^4.5.2",
     "react-hook-form": "^7.51.3",
     "zod": "^3.23.5",
@@ -26,11 +26,11 @@
   "devDependencies": {
     "@condoflow/config": "*",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.35",
+    "eslint-config-next": "15.5.15",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"

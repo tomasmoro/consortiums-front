@@ -1,15 +1,12 @@
-import type { InputHTMLAttributes } from 'react';
-import { forwardRef } from 'react';
+import type { InputHTMLAttributes, Ref } from 'react';
 import { clsx } from 'clsx';
 
 interface CheckboxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label?: string;
+  ref?: Ref<HTMLInputElement>;
 }
 
-export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Checkbox(
-  { label, id, className, ...props },
-  ref,
-) {
+export function Checkbox({ label, id, className, ref, ...props }: CheckboxProps) {
   return (
     <div className="flex items-center gap-2">
       <input
@@ -29,4 +26,4 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Che
       )}
     </div>
   );
-});
+}
